@@ -1,0 +1,110 @@
+.footer {
+  padding-top: 131px;
+  padding-bottom: 151px;
+  background: #313341;
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 157px;
+}
+
+.img {
+  width: 196px;
+  height: 42px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 27px;
+  max-width: 197px;
+}
+
+.from {
+  display: flex;
+  column-gap: 54px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+
+.nav {
+  display: flex;
+  column-gap: 68px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logoDescription, .contacts, .link {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    column-gap: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .footer {
+    padding-block: 80px;
+  }
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #eef3ff;
+  }
+  .wrapper {
+    row-gap: 35px;
+  }
+  .img {
+    width: 102px;
+    height: 22px;
+  }
+  .logo {
+    align-items: center;
+    max-width: 210px;
+    row-gap: 12px;
+    text-align: center;
+  }
+  .from {
+    column-gap: 22px;
+  }
+  .nav {
+    column-gap: 22px;
+  }
+  .logoDescription, .contacts, .link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #eef3ff;
+  }
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

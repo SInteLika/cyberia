@@ -1,0 +1,39 @@
+.section {
+  margin-bottom: 100px;
+}
+
+.breadcrumb {
+  margin-bottom: 130px;
+}
+
+.title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  color: #eef3ff;
+  margin-bottom: 65px;
+}
+
+@media (max-width: 1000px) {
+  .section {
+    padding-top: 46px;
+  }
+  .breadcrumb {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 500px) {
+  .section {
+    background-color: #2C2D39;
+    padding-bottom: 48px;
+    margin-bottom: 0;
+  }
+  .breadcrumb {
+    margin-bottom: 29px;
+  }
+  .title {
+    margin-bottom: 47px;
+  }
+}
+
+/*# sourceMappingURL=Cases.module.css.map */

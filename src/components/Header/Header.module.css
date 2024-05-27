@@ -1,0 +1,33 @@
+.header {
+  padding-block: 65px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 191px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    box-shadow: 0 2px 3px 0 rgba(155, 155, 155, 0.15);
+    background: #20212c;
+    padding-block: 40px;
+  }
+  .wrapper {
+    justify-content: space-between;
+  }
+  .logo {
+    margin-right: 0;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    padding-block: 24px;
+  }
+}
+
+/*# sourceMappingURL=Header.module.css.map */

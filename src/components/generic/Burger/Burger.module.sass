@@ -1,0 +1,42 @@
+@import "../../../styles/varaible"
+
+.burger
+  display: none
+  z-index: 10
+  min-width: 30px
+  height: 20px
+  cursor: pointer
+  position: relative
+  overflow-y: hidden
+  & span
+    transition: .5s ease-out
+    position: absolute
+    top: 9px
+    display: block
+    height: 2px
+    width: 30px
+    background-color: $colorWhiteOneEE
+  &::before, &::after
+    transition: .5s ease-out
+    position: absolute
+    display: block
+    content: ''
+    height: 2px
+    width: 30px
+    background-color: $colorWhiteOneEE
+  &::before
+    top: 0
+  &::after
+    bottom: 0
+  &.active
+    & span
+      transform: scalex(0)
+    &::before
+      transform: rotate(45deg)
+      top: 9px
+    &::after
+      transform: rotate(-45deg)
+      bottom: 9px
+@media (max-width: 800px)
+  .burger
+    display: block

@@ -1,0 +1,72 @@
+.nav {
+  display: flex;
+  column-gap: 60px;
+}
+
+.link {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.link:hover:after {
+  width: 100%;
+}
+.link:after {
+  margin-top: 2px;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: #fff;
+  transition: width 0.3s ease-out;
+  overflow: hidden;
+  border-radius: 5px 5px;
+}
+
+@media (max-width: 800px) {
+  .navigationWrapper {
+    position: fixed;
+    padding-top: 85px;
+    padding-left: 80px;
+    padding-right: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    height: 100vh;
+    transform: translateY(-100%);
+    transition: 0.5s ease-out;
+    background: #24252f;
+  }
+  .navigationWrapper.active {
+    transform: translateY(0);
+    transition: 0.5s ease-out;
+  }
+  .navigationWrapper .link {
+    font-family: "Open Sans", sans-serif;
+    color: #eef3ff;
+  }
+  .navigationWrapper .link:hover:after {
+    width: 0;
+  }
+  .nav.active {
+    flex-direction: column;
+    row-gap: 30px;
+    color: #eef3ff;
+    margin-bottom: 47px;
+  }
+}
+@media (max-width: 500px) {
+  .navigationWrapper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/*# sourceMappingURL=Navigation.module.css.map */

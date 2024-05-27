@@ -1,0 +1,50 @@
+@import "../../../../styles/varaible"
+
+.filter
+  display: flex
+  flex-wrap: wrap
+  column-gap: 102px
+  row-gap: 30px
+  margin-bottom: 52px
+  min-width: 100%
+
+.filterItem
+  cursor: pointer
+  font-family: $font-family
+  font-weight: 400
+  font-size: 24px
+  color: $colorWhiteOneEE
+  box-shadow: 8px 15px 29px 0 rgba(23, 27, 44, 0.41)
+  background: #313341
+  border-radius: 7px
+  padding: 10px 29px
+  user-select: none
+  &:hover
+    box-shadow: 8px 15px 15px 0 rgba(23, 27, 44, 0.41)
+  &.active
+    background-color: #2d76f9
+
+@media (max-width: 1000px)
+  .filter
+    column-gap: 50px
+  .filterItem
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+    font-family: $second-family
+    font-weight: 400
+    font-size: 12px
+    width: 158px
+    height: 33px
+    white-space: nowrap
+
+@media (max-width: 500px)
+  .filter
+    column-gap: 8px
+    row-gap: 17px
+  .skeleton
+    border-radius: 7px
+    max-width: 158px
+    max-height: 33px
+    overflow: hidden
